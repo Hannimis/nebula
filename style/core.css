@@ -1,0 +1,53 @@
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.innerwrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.wrapper > .global {
+    display: flex;
+}
+div.wrapper > nav.global {
+    display: block;
+}
+div.nav-menu ul{
+    background-color: #2D4571;
+    display: flex;
+    justify-content: space-between;
+}
+div.nav-menu ul li{
+    text-align: center;
+}
+div.nav-menu ul li a{
+    padding: 5px 0;
+    transition: 0.2s;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+}
+div.nav-menu ul li a:hover{
+    background-color: #142C59;
+}
+.nav-toggle{ /** damn specificity **/
+    display: inline-block;
+}
+a.nav-toggle{ 
+    font-weight: bold;
+    transition: 0.2s;
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+a.nav-toggle:hover{
+    background-color: #ccc;
+}
+a.nav-toggle.active{ /** .active is active at widths below 640px **/ 
+    display: block;
+    opacity: 0.3;
+}
