@@ -9,19 +9,34 @@
 .wrapper > .global {
     display: flex;
 }
+.nav-menu{
+    background-color: #2D4571;
+}
+div.nav-menu ul {
+    max-width: 80%;
+    margin: 0 auto;
+}
 div.wrapper > nav.global {
     display: block;
+    margin: 0 auto;
 }
 div.nav-menu ul{
-    background-color: #2D4571;
     display: flex;
     justify-content: space-between;
 }
 div.nav-menu ul li{
     text-align: center;
 }
+div.nav-menu ul li:first-of-type a{
+    padding: 0;
+}
+div.nav-menu ul li:first-of-type a img{
+    filter: invert();
+    padding-top: 0.25em;
+    height: 1.9em;
+}
 div.nav-menu ul li a{
-    padding: 5px 0;
+    padding: 0.5em 0;
     transition: 0.2s;
     font-family: sans-serif;
     font-size: 20px;
