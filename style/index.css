@@ -3,7 +3,7 @@ body{
     background-repeat: no-repeat;
 }
 .nav-menu {
-    margin-bottom: 10em;
+    margin-bottom: 7    em;
 }
 
 main{
@@ -11,8 +11,8 @@ main{
 }
 .innerwrapper{
     display: flex;
+    flex-flow: wrap;
     width: 100%;
-    max-height: 35em;
 }
 .sites {
     box-sizing: border-box;
@@ -77,9 +77,8 @@ sites li div p{
 }
 .twatter{
     width: 30%;
-    max-height: 100%;
-    overflow-x: visible;
-    overflow: scroll;
+    max-height: 35em;
+    overflow-y: scroll;
 }
 .profile{
     width: 20%;
@@ -109,4 +108,72 @@ sites li div p{
     font-family: serif;
     padding: 0.5em 0.5em;
     margin: 0.5em;
+}
+.slider{
+    position: relative;
+    width: 100%;
+}
+#slideImg{
+    display: block;
+    width: 100%;
+}
+#slideDesc{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    box-sizing: border-box;
+    padding: 1em;
+    position: absolute;
+    line-height: 1;
+    font-size: 0.8;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+}
+.button{
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    font-size: 3em;
+    padding: 0.25em 0.5em;
+}
+.button:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+#left{
+    left: 0;
+    bottom: 0;
+}
+#right{
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px){
+    .innerwrapper > div{
+        width: 100%;
+    }
+    body{
+            background-image: url("https://unsplash.it/2000/3000?image=681");
+    }
+    .sites li a{
+        text-align: center;
+    }
+    .sites li div{
+    opacity: 1;
+    height: initial;
+        background-color: white;
+    }
+    #slideDesc{
+        top: 100%;
+        width: 100%;
+    }
+    
 }

@@ -35,6 +35,11 @@ div.nav-menu ul li:first-of-type a img{
     padding-top: 0.25em;
     height: 1.9em;
 }
+@media screen and (max-width: 800px){
+    nav{
+        background-color: white;
+    }
+}
 div.nav-menu ul li a{
     padding: 0.5em 0;
     transition: 0.2s;
