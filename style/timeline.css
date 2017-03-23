@@ -5,14 +5,24 @@
 #earth {
     display: block;
 }
+span {
+    text-decoration: underline;
+    opacity: 0.3;
+}
 .content{
-    padding: 1em;
+    display: block;
+    cursor: pointer;
+    background-color: white;
     border: 1px solid #eee;
     margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 2em;
 }
-.content:hover{
-    background-color: #eee;
+.content > a{
+    padding: 1em;
+    display: block;
 }
+
 .sub-content{
     display: none;
     height: 0px;
@@ -23,18 +33,37 @@
     float: left;
     padding: 1em;
 }
+@media screen and (max-width: 800px){
+    .sub-content img.thumb{
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 1em;
+    }
+    .content{
+        width: 100%;
+    }
+}
 .sub-content p {
+    font-size: 0.7em;
     padding: 1em;
     box-sizing: border-box;
 }
-h2.displayed+.sub-content{
+a:hover{
+    background-color: #eee;
+}
+a.displayed{
+    background-color: #eee;
+}
+a.displayed:hover{
+    background-color: #f99;
+}
+a.displayed+.sub-content{
     display: block;
     opacity: 1;
     height: initial;
 }
-h2{
-    text-align: center;
-    font-size: 2em;
+.thumb {
+    max-width: 20%;
 }
 b{
     font-weight: bold;

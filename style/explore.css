@@ -13,9 +13,27 @@
 }
 .list-master{
     background-color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+@media screen and (max-width: 800px){
+    ul.s-nav{
+        min-width: initial;
+    }
+    .innerwrapper{
+        min-width: 70%;
+        background-color: white;
+    }
+    div.content img{
+        max-width: 100%;
+        box-sizing: border-box;
+    }
 }
 .s-nav{
     min-width: 15%;
+}
+.innerwrapper{
+    min-width: 85%;
 }
 .s-nav a{
     text-decoration: none;
@@ -42,9 +60,6 @@
 }
 .wrapper{   
     background-color: white;
-}
-.innerwrapper{
-    min-width: 85%;
 }
 .content{
     display: none;

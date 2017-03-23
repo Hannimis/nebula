@@ -45,8 +45,10 @@ main{
     display: block;
     box-sizing: border-box;
 }
+.sites li a + div {
+    padding: 0.5em;
+}
 .sites li a:hover + div{
-    padding: 0.2em;
     box-sizing: border-box;
     width: 100%;
     height: initial;
@@ -175,6 +177,7 @@ sites li div p{
         background-color: white;
     }
     #slideDesc{
+        padding-top: 2em;
         top: 100%;
         width: 100%;
     }
