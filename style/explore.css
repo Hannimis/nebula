@@ -1,0 +1,65 @@
+@media screen and (max-width: 800px){
+    ul.s-nav li > a{
+        padding: 1em 0;
+    }
+}
+.s-nav > li > a{
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0.5em;
+    color: black;
+    width: 100%;
+}
+.list-master{
+    background-color: white;
+}
+.s-nav{
+    min-width: 15%;
+}
+.s-nav a{
+    text-decoration: none;
+}
+.s-nav a.displayed + .sub-list{
+    display: inline-block;
+}
+.s-nav > li{
+    border: 1px solid #eee;
+}
+.sub-list{
+    display: none;
+}
+.sub-list > li > a{
+    padding: 0.5em 0;
+}
+.sub-list{
+    width: 100%;
+}
+.sub-list > li > a{
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.wrapper{   
+    background-color: white;
+}
+.innerwrapper{
+    min-width: 85%;
+}
+.content{
+    display: none;
+}
+.content img{
+    max-width: 25%;
+    float: left;
+    padding: 1em;
+}
+.content p{
+    padding: 1em;
+}
+a#earth {
+    background-color: #eee;
+}
+#earth{
+    display: block;
+}

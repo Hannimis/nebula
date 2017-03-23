@@ -80,6 +80,9 @@ sites li div p{
     max-height: 35em;
     overflow-y: scroll;
 }
+.twatter a{
+    color: white;
+}
 .profile{
     width: 20%;
 }

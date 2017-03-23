@@ -1,8 +1,12 @@
-var img, txt;
+var img, txt, box, tree, branch;
 window.onload = function(){
+    if(window.location.pathname=='/index.html'){
     document.getElementById('slideImg').src= "img/apollo-rover.jpg";
     img = document.getElementById('slideImg');
     txt = document.getElementById('slideDesc');
+    } 
+    listen();
+    console.log("lol");
 }
 var i = 0;
 function left(id){
@@ -30,5 +34,50 @@ function imageS(){
             img.src= "img/apollo-rake.jpg";  
             txt.innerHTML = 'Geologist-Astronaut Harrison Schmitt retrieved lunar samples with an adjustable sampling scoop during the second extravehicular activity at Station 5 at the Taurus-Littrow landing site. Schmitt and fellow lunar explorer, Commander Eugene Cernan set up nine geology stations on the moon. During three lunar excursions, they drove the rover between sites to collect samples and monitor data on instruments. The lunar roving vehicle was developed by NASA’s Marshall Space Flight Center in Huntsville, Ala.';
             break;
+    }
+}
+
+function listen(){
+    box = document.getElementsByClassName('content');
+    for(var j = 0; j < box.length; j++){
+        box[j].addEventListener('click', function(e){
+            console.log(e);
+           e.target.classList.toggle('displayed');
+        });
+    }
+    tree = document.getElementsByClassName('list-master');
+    for(var k = 0; k < tree.length; k++){
+        tree[k].addEventListener('click', function(e){
+           console.log(e + "type tree");
+        e.target.classList.toggle('displayed');
+        });
+    }
+    branch = document.getElementsByClassName('nanda-kore');
+    for(var l = 0; l < branch.length; l++){
+        console.log(branch[l]);
+        branch[l].addEventListener('click', function(){
+            var temp = this.getAttribute('value');
+            clearDisplay(temp);
+        });
+    }
+}
+function clearDisplay(exclude){
+    branch = document.getElementsByClassName('nanda-kore');
+    for(var i = 0; i < branch.length; i++){
+        if(exclude == branch[i].getAttribute('id')){
+        branch[i].style.backgroundColor = '#eee';
+        }else{
+        branch[i].style.backgroundColor = 'initial';
+        }
+    }
+    var content = document.getElementsByClassName('content');
+    for(var j = 0; j < content.length; j++){
+        if(content[j].getAttribute('id')==exclude){
+            content[j].style.display = 'block';
+            content[j].classList.add = 'displayed';
+        }else{
+            content[j].style.display = 'none';
+            content[j].classList.remove = 'displayed';
+        }
     }
 }

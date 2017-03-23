@@ -1,3 +1,15 @@
+body{
+    background-image: url("https://unsplash.it/2000/1700?image=681");
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:800px){
+    body{
+            background-image: url("https://unsplash.it/2000/3000?image=681");
+    }
+}
+
+
+
 .wrapper {
     max-width: 80%;
     margin: 0 auto;
@@ -11,6 +23,11 @@
 }
 .nav-menu{
     background-color: #2D4571;
+}
+@media screen and (max-width: 640px){
+   nav div.nav-menu ul{
+        max-width: 100%;
+    }
 }
 div.nav-menu ul {
     max-width: 80%;
