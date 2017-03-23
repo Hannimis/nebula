@@ -48,7 +48,7 @@ function listen(){
     tree = document.getElementsByClassName('list-master');
     for(var k = 0; k < tree.length; k++){
         tree[k].addEventListener('click', function(e){
-           console.log(e + "type tree");
+           console.log(e.target.getAttribute('value'));
         e.target.classList.toggle('displayed');
         });
     }

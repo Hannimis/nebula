@@ -28,6 +28,10 @@
         max-width: 100%;
         box-sizing: border-box;
     }
+    ul li.list-master > .sub-list li > a{
+        color: blue;
+        font-size: 0.8em;
+    }
 }
 .s-nav{
     min-width: 15%;

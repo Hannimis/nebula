@@ -1,3 +1,45 @@
 .innerwrapper {
+    margin-top: 1rem;
     background-color: white;
+}
+.innerwrapper h2{
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1em;
+}
+h3{
+    text-align: center;
+    padding-bottom: 1em;
+}
+.science-guy p{
+    box-sizing: border-box;
+    padding: 1em;
+}
+.science-guy img{
+    max-width: 40%;
+    float: left;
+    padding: 0 1em 0 0;
+}
+.bill-guy img{
+    max-width: 40%;
+    float: right;
+    padding: 0 0 0 1em;
+}
+.bill-guy p{
+    line-height: 1.5em;
+}
+span {
+    opacity: 0.5;
+    display: block;
+    text-align: center;
+}
+@media screen and (max-width: 800){   
+.science-guy img{
+    display: block;
+    max-width: 100%;
+}
+    .bill-guy img{
+    max-width: 100%;
+    display: block;
+}
 }
