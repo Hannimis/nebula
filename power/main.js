@@ -1,10 +1,16 @@
 var img, txt, box, tree, branch;
 window.onload = function(){
-    if(window.location.pathname=='/index.html'){
+    if(window.location.pathname=='/nebula/'){
     document.getElementById('slideImg').src= "img/apollo-rover.jpg";
     img = document.getElementById('slideImg');
     txt = document.getElementById('slideDesc');
-    } 
+    }else if(window.location.pathname=='/nebula/index.html'){
+    document.getElementById('slideImg').src= "img/apollo-rover.jpg";
+    img = document.getElementById('slideImg');
+    txt = document.getElementById('slideDesc');
+    }else{
+        console.log(window.location.pathname)
+    }
     listen();
     console.log("lol");
 }

@@ -1,6 +1,13 @@
+.innerwrapper:first-of-type{
+}
 .innerwrapper {
     margin-top: 1rem;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.founders {
+    width: 100%;
 }
 .innerwrapper h2{
     font-size: 2em;
@@ -16,16 +23,20 @@ h3{
     padding: 1em;
 }
 .science-guy img{
-    max-width: 40%;
+    max-width: 20%;
     float: left;
     padding: 0 1em 0 0;
+    display: block;
 }
 .bill-guy img{
-    max-width: 40%;
-    float: right;
-    padding: 0 0 0 1em;
+    max-width: 17%;
+    display: block;
+    float: left;
+    padding: 1em;
 }
 .bill-guy p{
+    box-sizing: border-box;
+    padding: 1em;
     line-height: 1.5em;
 }
 span {
@@ -33,13 +44,53 @@ span {
     display: block;
     text-align: center;
 }
-@media screen and (max-width: 800){   
-.science-guy img{
-    display: block;
-    max-width: 100%;
+div.form form{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+}
+.textarea{
+    width: 40%;
+}
+textarea{
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 6.75rem;
+}
+.smallbox {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.form button{
+    width: 10%;
+}
+.smallbox input{
+    box-sizing: border-box;
+    font-size: 1.7em;
+}
+@media screen and (max-width: 800px){   
+    .science-guy img{
+        padding: 1em;
+        max-width: 100%;
+        box-sizing: border-box;
 }
     .bill-guy img{
-    max-width: 100%;
-    display: block;
+        padding: 1em;
+        max-width: 100%;
+        box-sizing: border-box;
 }
+    .smallbox input{
+    font-size: 1.3em;
+    }
+    textarea{
+        height: 6.3em;
+    }
+    div.form > form > *{
+        width: 100%;
+    }
+    div.form form{
+        flex-direction: column;
+    }
 }
